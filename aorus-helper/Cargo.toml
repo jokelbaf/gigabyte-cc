@@ -1,0 +1,12 @@
+[package]
+name = "aorus-helper"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[profile.release]
+strip = true
+opt-level = "z"
+lto = true
+codegen-units = 1

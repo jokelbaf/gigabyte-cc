@@ -1,0 +1,37 @@
+name: Lint Rust Code
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Install Linux Dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y \
+            libwebkit2gtk-4.1-dev \
+            build-essential \
+            curl \
+            wget \
+            file \
+            libxdo-dev \
+            libssl-dev \
+            libayatana-appindicator3-dev \
+            librsvg2-dev
+
+      - name: Install Rust
+        run: |
+          rustup update nightly
+          rustup default nightly
+          rustup component add clippy
+
+      - name: Run Clippy
+        working-directory: src-tauri
+        run: cargo clippy --all-targets -- -D warnings
