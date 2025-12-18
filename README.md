@@ -1,14 +1,15 @@
 <div align="center">
   <img src="public/logo.png" alt="Logo" width="180" height="180">
 
-  # AORUS Control Center
+# AORUS Control Center
 
-  **A desktop application for managing AORUS/Gigabyte laptops on Linux**
+**A desktop application for managing AORUS/Gigabyte laptops on Linux**
 
-  [![License](https://img.shields.io/badge/license-GNU-green.svg)](LICENSE)
-  [![Tauri](https://img.shields.io/badge/Tauri-v2-blue.svg)](https://tauri.app/)
-  [![React](https://img.shields.io/badge/React-19.1.0-blue.svg)](https://reactjs.org/)
-  [![Rust](https://img.shields.io/badge/Rust-2024-orange.svg)](https://www.rust-lang.org/)
+[![License](https://img.shields.io/badge/license-GNU-green.svg)](LICENSE)
+[![Tauri](https://img.shields.io/badge/Tauri-v2-blue.svg)](https://tauri.app/)
+[![React](https://img.shields.io/badge/React-19.1.0-blue.svg)](https://reactjs.org/)
+[![Rust](https://img.shields.io/badge/Rust-2024-orange.svg)](https://www.rust-lang.org/)
+
 </div>
 
 ## Preview
