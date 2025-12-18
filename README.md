@@ -1,6 +1,21 @@
-# AORUS Control Center
+<div align="center">
+  <img src="public/logo.png" alt="Logo" width="180" height="180">
 
-A desktop application for managing AORUS/Gigabyte laptops on Linux. Control fan speeds, battery charging, GPU boost, and monitor system temperatures through a modern graphical interface.
+  # AORUS Control Center
+
+  **A desktop application for managing AORUS/Gigabyte laptops on Linux**
+
+  [![License](https://img.shields.io/badge/license-GNU-green.svg)](LICENSE)
+  [![Tauri](https://img.shields.io/badge/Tauri-v2-blue.svg)](https://tauri.app/)
+  [![React](https://img.shields.io/badge/React-19.1.0-blue.svg)](https://reactjs.org/)
+  [![Rust](https://img.shields.io/badge/Rust-2024-orange.svg)](https://www.rust-lang.org/)
+</div>
+
+## Preview
+
+<div align="center">
+  <img src="preview/image.png" alt="Preview Screenshot" width="800">
+</div>
 
 ## Features
 
@@ -89,7 +104,7 @@ When you adjust a setting, the GUI calls `pkexec /usr/lib/aorus-cc/aorus-helper 
 
 ### Prerequisites
 
-- Node.js 18+
+- Node.js 20+
 - pnpm
 - Rust (via rustup)
 - Tauri CLI dependencies
@@ -123,7 +138,6 @@ src/                   # React frontend (TypeScript + Tailwind)
 src-tauri/             # Rust backend (Tauri)
 aorus-helper/          # Privileged helper binary
 polkit-policy/         # PolicyKit authorization rules
-gigabyte-laptop-wmi/   # Kernel driver
 ```
 
 ## Contributing
